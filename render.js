@@ -1,7 +1,3 @@
-function sum(obj) {
-	return Object.values(obj).reduce((acc, curr) => acc + curr, 0);
-}
-
 const trinity = {
 	Masters: 50,
 	"Work Experience": 40,
@@ -20,10 +16,11 @@ const saintAndrews = {
 	Campus: 5,
 };
 
-let trinityHtml = document.getElementById("trinity");
-let saintAndrewsHtml = document.getElementById("saint-andrews");
+function sum(obj) {
+	return Object.values(obj).reduce((acc, curr) => acc + curr, 0);
+}
 
-function doThing(obj, id, totalID) {
+function render(obj, id, totalID) {
 	let total = sum(obj);
 
 	let table = Object.keys(obj)
@@ -47,5 +44,5 @@ function doThing(obj, id, totalID) {
 											 	</tr>`;
 }
 
-doThing(trinity, "trinity", "t-total");
-doThing(saintAndrews, "saint-andrews", "s-total");
+render(trinity, "trinity", "t-total");
+render(saintAndrews, "saint-andrews", "s-total");
