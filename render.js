@@ -10,6 +10,7 @@ const trinity = {
 	Lila: 25,
 	"1 year counts towards permananent residency": 10,
 	Campus: 5,
+	Weather: 3,
 };
 
 const saintAndrews = {

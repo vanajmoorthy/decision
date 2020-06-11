@@ -25,12 +25,17 @@ main {
 	justify-content: space-between;
 }
 
+td {
+	margin: 1 1rem;
+}
+
 h1 {
 	font-weight: 500;
 }
 
 table {
 	width: 100%;
+	border-spacing: 0 1em;
 }
 
 th {
