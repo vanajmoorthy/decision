@@ -4,7 +4,7 @@ const trinity = {
 	'"Silicon Valley of Europe"/better for tech': 40,
 	"Easier to stay on": 30,
 	Lila: 25,
-	"1 year counts towards permananent residency": 10,
+	"1 year counts towards permananent residency": 6,
 	Campus: 5,
 	Weather: 3,
 };
