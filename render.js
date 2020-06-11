@@ -11,8 +11,8 @@ const trinity = {
 
 const saintAndrews = {
 	Lila: 25,
+	Friends: 17,
 	Family: 10,
-	Friends: 8,
 	Campus: 5,
 };
 
