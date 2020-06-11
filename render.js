@@ -16,32 +16,24 @@ const saintAndrews = {
 	Campus: 5,
 };
 
-function sum(obj) {
+function sumValuesOfObject(obj) {
 	return Object.values(obj).reduce((acc, curr) => acc + curr, 0);
 }
 
 function render(obj, id, totalID) {
-	let total = sum(obj);
+	let total = sumValuesOfObject(obj);
 
 	let table = Object.keys(obj)
-		.map((key) => {
-			return `<tr>
-                    <td>${key}</td>
-                    <td>${obj[key]}</td>
-                </tr>`;
-		})
+		.map((key) => `<tr><td>${key}</td><td>${obj[key]}</td></tr>`)
 		.join("");
 
-	document.getElementById(id).innerHTML = `<tr>
-												<th>Factor</th>
-												<th>Weightage</th>
-											 </tr>
-											 ${table}`;
+	document.getElementById(
+		id
+	).innerHTML = `<tr><th>Factor</th><th>Weightage</th></tr>${table}`;
 
-	document.getElementById(totalID).innerHTML = `<tr>
-												 	<td>Total</td>
-												 	<td>${total}</td>
-											 	</tr>`;
+	document.getElementById(
+		totalID
+	).innerHTML = `<tr><td>Total</td><td>${total}</td></tr>`;
 }
 
 render(trinity, "trinity", "t-total");
