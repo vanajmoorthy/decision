@@ -20,7 +20,7 @@ function sumValuesOfObject(obj) {
 	return Object.values(obj).reduce((acc, curr) => acc + curr, 0);
 }
 
-function render(obj, id, totalID) {
+function populateTable(obj, ID, totalID) {
 	let total = sumValuesOfObject(obj);
 
 	let table = Object.keys(obj)
@@ -28,7 +28,7 @@ function render(obj, id, totalID) {
 		.join("");
 
 	document.getElementById(
-		id
+		ID
 	).innerHTML = `<tr><th>Factor</th><th>Weightage</th></tr>${table}`;
 
 	document.getElementById(
@@ -36,5 +36,5 @@ function render(obj, id, totalID) {
 	).innerHTML = `<tr><td>Total</td><td>${total}</td></tr>`;
 }
 
-render(trinity, "trinity", "t-total");
-render(saintAndrews, "saint-andrews", "s-total");
+populateTable(trinity, "trinity", "t-total");
+populateTable(saintAndrews, "saint-andrews", "s-total");
