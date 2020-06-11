@@ -44,13 +44,7 @@ th {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 481px) {
-	h1 {
-		font-size: 1.3em;
-	}
-}
-
-@media screen and (max-width: 446px) {
+@media screen and (max-width: 650px) {
 	.column {
 		max-width: 80%;
 		margin-bottom: 2em;
