@@ -58,3 +58,8 @@ th {
 		flex-direction: column;
 	}
 }
+
+#t-total,
+#s-total {
+	background-color: #e2e2e2;
+}
